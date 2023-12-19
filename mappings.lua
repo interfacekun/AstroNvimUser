@@ -32,9 +32,15 @@ return {
     ["<leader>b"] = { name = "Buffers" },
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
+    -- ["<C-c"] = { [["+y]], desc = "copy to clipboard" },
+    ["<C-c"] = { [[<leader>y]], desc = "copy to clipboard" },
   },
   t = {
     -- setting a mapping to false will disable it
     -- ["<esc>"] = false,
+  },
+  v = {
+    -- ["<C-c"] = { [["+y]], desc = "copy to clipboard" },
+    ["<C-c"] = { [[<leader>y]], desc = "copy to clipboard" },
   },
 }
